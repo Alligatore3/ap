@@ -1,0 +1,7 @@
+[03-Mar-2016 15:02:27 Europe/Berlin] PHP Warning:  fopen(audio/merda.mp3): failed to open stream: No such file or directory in /home/yrlkkdpc/public_html/siti/ap/dwl.php on line 11
+[03-Mar-2016 15:02:27 Europe/Berlin] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/yrlkkdpc/public_html/siti/ap/dwl.php on line 33
+[03-Mar-2016 15:02:43 Europe/Berlin] PHP Warning:  fopen(audio/audiomerda.mp3): failed to open stream: No such file or directory in /home/yrlkkdpc/public_html/siti/ap/dwl.php on line 11
+[03-Mar-2016 15:02:43 Europe/Berlin] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/yrlkkdpc/public_html/siti/ap/dwl.php on line 33
+[03-Mar-2016 15:02:48 Europe/Berlin] PHP Warning:  fopen(audio/assetsaudiomerda.mp3): failed to open stream: No such file or directory in /home/yrlkkdpc/public_html/siti/ap/dwl.php on line 11
+[03-Mar-2016 15:02:48 Europe/Berlin] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/yrlkkdpc/public_html/siti/ap/dwl.php on line 33
+[21-Apr-2016 15:27:19 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in /home/yrlkkdpc/public_html/siti/ap/index.php on line 90
