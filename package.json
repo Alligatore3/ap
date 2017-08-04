@@ -1,0 +1,26 @@
+{
+  "name": "ap-plyr",
+  "version": "0.0.1",
+  "description": "Switch player from mediaelement to plyr",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alligatore3/ap.git"
+  },
+  "keywords": [
+    "plyrs",
+    "player"
+  ],
+  "author": "Mattia Zanella",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alligatore3/ap/issues"
+  },
+  "homepage": "https://github.com/Alligatore3/ap#readme",
+  "dependencies": {
+    "plyr": "^2.0.13"
+  }
+}
