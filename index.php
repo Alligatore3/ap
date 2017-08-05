@@ -17,7 +17,49 @@
 		<div id="main" class="col-md-12 col-sm-12 text-center">
 
 		<?php
-			$video = array(
+
+		if ( $handle = opendir('./assets/audio') ) {
+			$counter = 0;
+		    /* This is the correct way to loop over the directory. */
+		    while ( false !== ($entry = readdir($handle)) ) {
+				if( $counter !== 0 && $counter !== 1 ){
+		?>
+			<div
+				id="<?php //echo substr($tone[0], 0, -4);?>"
+				class="track quote-box">
+				<div class="quote-text">
+					<i class="fa fa-quote-left"></i>
+					<span
+						id="text"
+						class="description">
+						<?php //echo $tone[2] ; ?>
+					</span>
+				</div>
+				<div class="quote-date m-b-20">
+					<i class="fa fa-calendar" aria-hidden="true"></i>
+					<span id="date">
+						<?php //echo $tone[1]; ?>
+					</span>
+				</div>
+
+				<audio
+					crossorigin="anonymous"
+					class="aud"
+					src="./assets/audio/<?php echo $entry; ?>"
+					type="audio/mp3"
+					controls>
+				</audio>
+			</div>
+
+			<?php
+				}
+				$counter++;
+		    }
+
+		    closedir( $handle );
+		}
+
+			/*$video = array(
 				array('faccia.mp4','faccia.jpg' ),
 				array('ale.mp4','ale.jpg' ),
 			);
@@ -77,45 +119,14 @@
 				array('basta.mp3','28/02/17','Basta' ),
 				array('abbandonato.mp3','31/03/17','Abbandonato' ),
 				array('godo.mp3','24/07/17','Godoooh' )
-			);
+			);*/
 
-		  	foreach ($audio as $tone):
 		?>
-
-
-			<div
-				id="<?php echo substr($tone[0], 0, -4);?>"
-				class="track quote-box">
-				<div class="quote-text">
-					<i class="fa fa-quote-left"> </i>
-					<span
-						id="text"
-						class="description">
-						<?php echo $tone[2] ; ?>
-					</span>
-				</div>
-				<div class="quote-date m-b-20">
-					<i class="fa fa-calendar" aria-hidden="true"></i>
-					<span id="date">
-						<?php echo $tone[1]; ?>
-					</span>
-				</div>
-
-				<audio
-					crossorigin="anonymous"
-					class="aud <?php if ($tone[3]) { echo $tone[3]; } ?>"
-					src="./assets/audio/<?php echo $tone[0]; ?>"
-					type="audio/mp3"
-					controls>
-				</audio>
-			</div>
-
-		<?php endforeach; ?>
 
 		<div class="counter">
 			<i class="inline-block fa fa-retweet" aria-hidden="true"></i>
 			<p class="inline-block size-20">
-				<?php echo count($audio); ?>
+				<?php echo $counter; ?>
 			</p>
 		</div>
 
