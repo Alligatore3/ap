@@ -102,7 +102,7 @@
 				</div>
 
 				<audio
-					crossOrigin="anonymous"
+					crossorigin="anonymous"
 					class="aud <?php if ($tone[3]) { echo $tone[3]; } ?>"
 					src="./assets/audio/<?php echo $tone[0]; ?>"
 					type="audio/mp3"
