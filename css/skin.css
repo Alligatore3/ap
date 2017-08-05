@@ -58,3 +58,9 @@ box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
 .plyr__video-wrapper {
     margin-bottom: 5%;
 }
+
+@media all and (max-width: 600px) {
+    .quote-box .quote-text {
+        font-size: 18px;
+    }
+}

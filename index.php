@@ -74,7 +74,7 @@
 				array('grave.mp3','22/12/2016','Oltrepassare i limiti' ),
 				array('della.mp3','07/01/17','Dellai' ),
 				array('solo.mp3','28/02/17','Vai da solo' ),
-				array('Basta.mp3','28/02/17','Basta' ),
+				array('basta.mp3','28/02/17','Basta' ),
 				array('abbandonato.mp3','31/03/17','Abbandonato' ),
 				array('godo.mp3','24/07/17','Godoooh' )
 			);
