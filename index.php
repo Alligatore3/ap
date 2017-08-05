@@ -76,8 +76,7 @@
 				array('solo.mp3','28/02/17','Vai da solo' ),
 				array('Basta.mp3','28/02/17','Basta' ),
 				array('abbandonato.mp3','31/03/17','Abbandonato' ),
-				array('godo.mp3','24/07/17','Godoooh' ),
-				// array('battaglia.mp3','09/01/17','Battaglia di Waterloo' ),
+				array('godo.mp3','24/07/17','Godoooh' )
 			);
 
 		  	foreach ($audio as $tone):
