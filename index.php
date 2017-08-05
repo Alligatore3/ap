@@ -5,11 +5,11 @@
 		<meta name="description" content="Il sito è una raccolta di evocazioni a divinità vietato ai minori di 19." />
 		<title>Aleks & Paolo</title>
 
-		<link rel="stylesheet" href="css/bootstrap.min.css" />
-		<link rel="stylesheet" href="css/skin.css" />
+		<link rel="stylesheet" href="./css/bootstrap.min.css" />
+		<link rel="stylesheet" href="./css/skin.css" />
 		<link rel="stylesheet" href="https://cdn.plyr.io/2.0.13/plyr.css">
 
-		<link rel="icon" href="assets/images/smile.png" type="image/png" />
+		<link rel="icon" href="./assets/images/smile.png" type="image/png" />
 	    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
 	</head>
 
@@ -102,8 +102,9 @@
 				</div>
 
 				<audio
+					crossOrigin="anonymous"
 					class="aud <?php if ($tone[3]) { echo $tone[3]; } ?>"
-					src="assets/audio/<?php echo $tone[0]; ?>"
+					src="./assets/audio/<?php echo $tone[0]; ?>"
 					type="audio/mp3"
 					controls>
 				</audio>
@@ -124,18 +125,18 @@
 			<?php foreach ($video as $vid): ?>
 				<video
 					class="vid center"
-					poster="assets/images/cover/<?php echo $vid[1] ?>"
+					poster="./assets/images/cover/<?php echo $vid[1] ?>"
 					preload="true"
 					controls>
 					<source
-						src="assets/video/<?php echo $vid[0]; ?>"
+						src="./assets/video/<?php echo $vid[0]; ?>"
 						type="video/mp4">
 				</video>
 			<?php endforeach; ?>
 		</div>
 
 		<footer>
-			<script src="js/jquery.js"></script>
+			<script src="./js/jquery.js"></script>
 			<script src="https://use.fontawesome.com/26b7e42569.js"></script>
 			<script src="https://cdn.plyr.io/2.0.13/plyr.js"></script>
 			<script>
