@@ -17,12 +17,15 @@
 		<div id="main" class="col-md-12 col-sm-12 text-center">
 
 		<?php
+		include_once "./assets/classes/CMP3File.php";
+		$mp3file = new CMP3File;
 
 		if ( $handle = opendir('./assets/audio') ) {
 			$counter = 0;
 		    /* This is the correct way to loop over the directory. */
 		    while ( false !== ($entry = readdir($handle)) ) {
 				if( $counter !== 0 && $counter !== 1 ){
+					$mp3file->getid3( "./assets/audio/" . $entry );
 		?>
 			<div
 				id="<?php //echo substr($tone[0], 0, -4);?>"
@@ -32,7 +35,7 @@
 					<span
 						id="text"
 						class="description">
-						<?php //echo $tone[2] ; ?>
+						<?php echo $mp3file->comment; ?>
 					</span>
 				</div>
 				<div class="quote-date m-b-20">
