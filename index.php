@@ -14,21 +14,23 @@
 	</head>
 
 	<body class="container">
-		<div id="main" class="col-md-12 col-sm-12 text-center">
+		<div
+			id="main"
+			class="col-md-12 col-sm-12 text-center">
 
 		<?php
-		include_once "./assets/classes/CMP3File.php";
-		$mp3file = new CMP3File;
+			include_once "./assets/classes/CMP3File.php";
+			$mp3file = new CMP3File;
 
-		if ( $handle = opendir('./assets/audio') ) {
-			$counter = 0;
-		    /* This is the correct way to loop over the directory. */
-		    while ( false !== ($entry = readdir($handle)) ) {
-				if( $counter !== 0 && $counter !== 1 ){
-					$mp3file->getid3( "./assets/audio/" . $entry );
-		?>
+			if ( $handle = opendir('./assets/audio') ) {
+				$counter = 0;
+			    /* This is the correct way to loop over the directory. */
+			    while ( false !== ( $entry = readdir($handle) ) ) {
+					// Avoiding first two entities . and .. ( Unix file system convention )
+					if( $counter !== 0 && $counter !== 1 ):
+						$mp3file->getid3( "./assets/audio/" . $entry ); ?>
 			<div
-				id="<?php //echo substr($tone[0], 0, -4);?>"
+				id="<?php echo substr($entry, 0, -4); ?>"
 				class="track quote-box">
 				<div class="quote-text">
 					<i class="fa fa-quote-left"></i>
@@ -41,7 +43,7 @@
 				<div class="quote-date m-b-20">
 					<i class="fa fa-calendar" aria-hidden="true"></i>
 					<span id="date">
-						<?php //echo $tone[1]; ?>
+						<?php echo $mp3file->year; ?>
 					</span>
 				</div>
 
@@ -55,8 +57,10 @@
 			</div>
 
 			<?php
-				}
+				endif;
 				$counter++;
+
+				flush();
 		    }
 
 		    closedir( $handle );
