@@ -37,7 +37,7 @@
 					<span
 						id="text"
 						class="description">
-						<?php echo $mp3file->comment; ?>
+						<?php echo iconv('ISO-8859-1', 'UTF-8', $mp3file->comment); ?>
 					</span>
 				</div>
 				<div class="quote-date m-b-20">
@@ -74,7 +74,6 @@
 				array('something_water.mp3','07/01/17','Something in the water' ),
 				array('fissato_aleks.mp3','03/02/15','Fissato del cazzo' ),
 				array('pissio.mp3','04/02/15','Pissio DC' ),
-				array('aleks_vs_paul.mp3','31/01/15','Alla cortese attenzione di Alessandro & Paolo', 'true'),
 				array('paul_vs_aleks.mp3','31/01/15','Alla cortese attenzione di Alessandro & Paolo', 'true'),
 				array('vs_aleks.mp3','31/01/15','Alla cortese attenzione di Alessandro & Mattia', 'true'),
 				array('mina_aleks.mp3','01/02/15','Che mina era?' ),
@@ -85,9 +84,7 @@
 				array('nulla.mp3','12/08/15','Nullità' ),
 				array('dico_a_cib.mp3','23/09/15','Dico solo a Cib' ),
 				array('ragionare.mp3','27/09/15','Ragionare' ),
-				array('balzo_milano.mp3','27/09/15','Sono Mattia Zanella' ),
 				array('rash-fibra.mp3','17/10/15','Tutto fibra 5€' ),
-				array('attiva.mp3','30/09/15','Attivati' ),
 				array('destinatario.mp3','22/10/15','Chi è il destinatario' ),
 				array('macchina.mp3','04/11/15','Sei in macchina' ),
 				array('ignorante.mp3','05/12/15','Sei ignorante' ),
@@ -105,26 +102,21 @@
 				array('osa.mp3','21/02/2016','Osa solo' ),
 				array('trammezzo.mp3','21/02/2016','Sei malata' ),
 				array('permesso.mp3','21/02/2016','Autorizzazione' ),
-				array('alessio.mp3','03/03/2016','Alessio' ),
 				array('finito.mp3','06/03/2016','Hai finito?' ),
 				array('elena.mp3','15/03/2016','Brava persona' ),
-				array('andrea.mp3','15/03/2016','Andrea Galeazzi' ),
 				array('faccia.mp3','21/03/2016','Ha una faccia' ),
 				array('jesolo.mp3','21/03/2016','Se andate a Jesolo' ),
 				array('zane.mp3','21/03/2016','Zane' ),
 				array('vetroloso.mp3','05/04/2016','Vetroloso' ),
 				array('palette.mp3','05/04/2016','Palette colori' ),
 				array('sido.mp3','21/04/2016','2€' ),
-				array('aula.mp3','22/12/2016','In aula lui' ),
 				array('ios.mp3','22/12/2016','iOS' ),
 				array('keep.mp3','22/12/2016','Keep your fire burning' ),
 				array('vedoNonVedo.mp3','22/12/2016','Vedo non vedo' ),
-				array('baffo.mp3','22/12/2016','Io ti verrò a cercare' ),
 				array('grave.mp3','22/12/2016','Oltrepassare i limiti' ),
 				array('della.mp3','07/01/17','Dellai' ),
 				array('solo.mp3','28/02/17','Vai da solo' ),
 				array('basta.mp3','28/02/17','Basta' ),
-				array('abbandonato.mp3','31/03/17','Abbandonato' ),
 				array('godo.mp3','24/07/17','Godoooh' )
 			);*/
 
