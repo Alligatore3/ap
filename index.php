@@ -28,7 +28,6 @@
 
 			if ( $handle = opendir('./assets/audio') ) {
 				$counter = 0;
-				meda();
 			    /* This is the correct way to loop over the directory. */
 			    while ( false !== ( $entry = readdir($handle) ) ) {
 					// Avoiding first two entities . and .. ( Unix file system convention )
