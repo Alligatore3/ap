@@ -72,7 +72,7 @@
 			);
 			$audio = array (
 				array('something_water.mp3','07/01/17','Something in the water' ),
-				array('fissato_aleks.mp3','03/02/15','Fissato del cazzo' ),
+
 				array('pissio.mp3','04/02/15','Pissio DC' ),
 				array('paul_vs_aleks.mp3','31/01/15','Alla cortese attenzione di Alessandro & Paolo', 'true'),
 				array('vs_aleks.mp3','31/01/15','Alla cortese attenzione di Alessandro & Mattia', 'true'),
@@ -82,10 +82,9 @@
 				array('dove_sei.mp3','08/08/15','Dove cazzo sei' ),
 				array('vicenza.mp3','11/08/15','Vorrei andare ogno giorno a Vicenza' ),
 				array('nulla.mp3','12/08/15','Nullità' ),
-				array('dico_a_cib.mp3','23/09/15','Dico solo a Cib' ),
+
 				array('ragionare.mp3','27/09/15','Ragionare' ),
 				array('rash-fibra.mp3','17/10/15','Tutto fibra 5€' ),
-				array('destinatario.mp3','22/10/15','Chi è il destinatario' ),
 				array('macchina.mp3','04/11/15','Sei in macchina' ),
 				array('ignorante.mp3','05/12/15','Sei ignorante' ),
 				array('mattia.mp3','09/12/15','Oh Mattia Zanella' ),
@@ -95,29 +94,24 @@
 				array('libro.mp3','23/12/15','Leggi un libro' ),
 				array('pietro.mp3','09/02/2016','Pietro' ),
 				array('parchetto.mp3','09/02/2016','Party One' ),
-				array('ciuffo.mp3','13/02/2016','La fame nel mondo' ),
 				array('lanciafiamme.mp3','13/02/2016','Lanciafiamme' ),
 				array('merda.mp3','13/02/2016','È una merda' ),
-				array('chieta.mp3','21/02/2016','Sta Chieta' ),
 				array('osa.mp3','21/02/2016','Osa solo' ),
 				array('trammezzo.mp3','21/02/2016','Sei malata' ),
 				array('permesso.mp3','21/02/2016','Autorizzazione' ),
-				array('finito.mp3','06/03/2016','Hai finito?' ),
-				array('elena.mp3','15/03/2016','Brava persona' ),
+
 				array('faccia.mp3','21/03/2016','Ha una faccia' ),
 				array('jesolo.mp3','21/03/2016','Se andate a Jesolo' ),
 				array('zane.mp3','21/03/2016','Zane' ),
 				array('vetroloso.mp3','05/04/2016','Vetroloso' ),
 				array('palette.mp3','05/04/2016','Palette colori' ),
 				array('sido.mp3','21/04/2016','2€' ),
-				array('ios.mp3','22/12/2016','iOS' ),
+
 				array('keep.mp3','22/12/2016','Keep your fire burning' ),
 				array('vedoNonVedo.mp3','22/12/2016','Vedo non vedo' ),
-				array('grave.mp3','22/12/2016','Oltrepassare i limiti' ),
-				array('della.mp3','07/01/17','Dellai' ),
+
 				array('solo.mp3','28/02/17','Vai da solo' ),
-				array('basta.mp3','28/02/17','Basta' ),
-				array('godo.mp3','24/07/17','Godoooh' )
+
 			);*/
 
 		?>
