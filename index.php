@@ -1,3 +1,8 @@
+<?php
+	include_once "./assets/inc/fs.php";
+	include_once "./assets/inc/CMP3File.php";
+?>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -19,54 +24,25 @@
 			class="col-md-12 col-sm-12 text-center">
 
 		<?php
-			include_once "./assets/classes/CMP3File.php";
 			$mp3file = new CMP3File;
 
 			if ( $handle = opendir('./assets/audio') ) {
 				$counter = 0;
+				meda();
 			    /* This is the correct way to loop over the directory. */
 			    while ( false !== ( $entry = readdir($handle) ) ) {
 					// Avoiding first two entities . and .. ( Unix file system convention )
-					if( $counter !== 0 && $counter !== 1 ):
-						$mp3file->getid3( "./assets/audio/" . $entry ); ?>
-			<div
-				id="<?php echo substr($entry, 0, -4); ?>"
-				class="track quote-box">
-				<div class="quote-text">
-					<i class="fa fa-quote-left"></i>
-					<span
-						id="text"
-						class="description">
-						<?php echo iconv('ISO-8859-1', 'UTF-8', $mp3file->comment); ?>
-					</span>
-				</div>
-				<div class="quote-date m-b-20">
-					<i class="fa fa-calendar" aria-hidden="true"></i>
-					<span
-						id="date"
-						class="m-l-5">
-						<?php echo $mp3file->year; ?>
-					</span>
-				</div>
+					if( $counter !== 0 && $counter !== 1 ){
+						$mp3file->getid3( "./assets/audio/" . $entry );
+						the_player($mp3file, $entry);
+					}
+					$counter++;
 
-				<audio
-					crossorigin="anonymous"
-					class="aud"
-					src="./assets/audio/<?php echo $entry; ?>"
-					type="audio/mp3"
-					controls>
-				</audio>
-			</div>
+					flush();
+		    	}
 
-			<?php
-				endif;
-				$counter++;
-
-				flush();
-		    }
-
-		    closedir( $handle );
-		}
+		    	closedir( $handle );
+			}
 
 			/*$video = array(
 				array('faccia.mp4','faccia.jpg' ),
