@@ -33,7 +33,7 @@
 					// Avoiding first two entities . and .. ( Unix file system convention )
 					if( $counter !== 0 && $counter !== 1 ){
 						$mp3file->getid3( "./assets/audio/" . $entry );
-						the_player($mp3file, $entry);
+						echo the_player($mp3file, $entry);
 					}
 					$counter++;
 
