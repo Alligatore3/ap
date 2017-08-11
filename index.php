@@ -50,12 +50,7 @@
 
 		?>
 
-		<div class="counter">
-			<i class="inline-block fa fa-retweet" aria-hidden="true"></i>
-			<p class="inline-block size-20">
-				<?php echo $counter; ?>
-			</p>
-		</div>
+		<?php echo the_counter($counter); ?>
 
 		</div>
 

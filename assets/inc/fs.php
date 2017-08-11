@@ -4,7 +4,7 @@ function the_player($audio, $src) {
     $id = substr($src, 0, -4);
     $audio->comment = iconv('ISO-8859-1', 'UTF-8', $audio->comment);
 
-return <<<HTML
+    return <<<HTML
         <div
             id="$id"
             class="track quote-box">
@@ -33,5 +33,18 @@ return <<<HTML
                 controls>
             </audio>
         </div>
+HTML;
+}
+
+
+function the_counter($counter) {
+
+    return <<<HTML
+    <div class="counter">
+        <i class="inline-block fa fa-retweet" aria-hidden="true"></i>
+        <p class="inline-block size-20">
+            $counter
+        </p>
+    </div>
 HTML;
 }
