@@ -20,7 +20,7 @@
 	<body class="container">
 		<div
 			id="main"
-			class="col-md-12 col-sm-12 text-center">
+			class="col-md-12 col-sm-12 text-center f-none">
 
 		<?php
 			$mp3file = new CMP3File;
@@ -54,18 +54,20 @@
 
 		</div>
 
-		<div class="video col-md-12 col-sm-12 text-center m-b-100">
-			<?php foreach ($video as $vid): ?>
-				<video
-					class="vid center"
-					poster="./assets/images/cover/<?php echo $vid[1] ?>"
-					preload="true"
-					controls>
-					<source
-						src="./assets/video/<?php echo $vid[0]; ?>"
-						type="video/mp4">
-				</video>
-			<?php endforeach; ?>
+		<div class="video col-md-12 col-sm-12 text-center m-b-100 f-none">
+			<div class="video-wrapper">
+				<?php foreach ($video as $vid): ?>
+					<video
+						class="vid center"
+						poster="./assets/images/cover/<?php echo $vid[1] ?>"
+						preload="true"
+						controls>
+						<source
+							src="./assets/video/<?php echo $vid[0]; ?>"
+							type="video/mp4">
+					</video>
+				<?php endforeach; ?>
+			</div>
 		</div>
 
 		<footer>

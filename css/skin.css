@@ -6,6 +6,10 @@
   margin: 20px;
 }
 
+.f-none{
+    float: none;
+}
+
 .m-b-20{
   margin-bottom: 20px;
 }
@@ -40,6 +44,7 @@
 -moz-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
 box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
 }
+
 .quote-box .quote-text {
   text-align: center;
   height: auto;
@@ -47,10 +52,12 @@ box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
   font-weight: 500;
   font-size: 1.75em;
 }
+
 .quote-box .quote-text i {
   font-size: 1.0em;
   margin-right: 0.4em;
 }
+
 .quote-box .quote-date {
   height: auto;
   clear: both;
@@ -63,8 +70,21 @@ box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
     margin-bottom: 5%;
 }
 
+.video-wrapper{
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
 @media all and (max-width: 600px) {
     .quote-box .quote-text {
         font-size: 18px;
+    }
+}
+
+@media all and (max-width: 1023px) {
+    .video-wrapper{
+        width: 100%;
     }
 }
