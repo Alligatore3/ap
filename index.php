@@ -11,11 +11,10 @@
 		<title>Aleks & Paolo</title>
 
 		<link rel="stylesheet" href="./css/bootstrap.min.css" />
-		<link rel="stylesheet" href="./css/skin.css" />
-		<link rel="stylesheet" href="https://cdn.plyr.io/2.0.13/plyr.css">
+		<link rel="stylesheet" href="./css/skin.min.css" />
+		<link rel="stylesheet" href="./css/plyr.css">
 
 		<link rel="icon" href="./assets/images/smile.png" type="image/png" />
-	    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
 	</head>
 
 	<body class="container">
@@ -43,10 +42,11 @@
 		    	closedir( $handle );
 			}
 
-			/*$video = array(
+			$video = array(
 				array('faccia.mp4','faccia.jpg' ),
 				array('ale.mp4','ale.jpg' ),
-			);*/
+				array('foto.mp4','placeholder.jpg' )
+			);
 
 		?>
 
@@ -69,9 +69,9 @@
 		</div>
 
 		<footer>
-			<script src="./js/jquery.js"></script>
+			<script src="./js/jquery.min.js"></script>
+			<script src="./js/plyr.js"></script>
 			<script src="https://use.fontawesome.com/26b7e42569.js"></script>
-			<script src="https://cdn.plyr.io/2.0.13/plyr.js"></script>
 			<script>
 				$(function() {
 				  // Handler for .ready() called.
