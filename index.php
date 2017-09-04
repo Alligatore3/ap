@@ -45,6 +45,7 @@
 			$video = array(
 				array('faccia.mp4','faccia.jpg' ),
 				array('ale.mp4','ale.jpg' ),
+				array('godo.mp4','godo.jpeg' ),
 				array('foto.mp4','placeholder.jpg' )
 			);
 
