@@ -18,6 +18,7 @@
 	</head>
 
 	<body class="container">
+		<div class="spinner"></div>
 		<div
 			id="main"
 			class="col-md-12 col-sm-12 text-center f-none">
@@ -79,6 +80,11 @@
 				$(function() {
 				  // Handler for .ready() called.
 				  plyr.setup();
+					
+					$( window ).on(
+						"load",
+						$('.spinner').hide()
+					);
 				});
 			</script>
 		</footer>

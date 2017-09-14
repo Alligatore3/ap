@@ -1,3 +1,13 @@
+.spinner{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 2000;
+  background-color: grey;
+}
+
 .vid{
   max-width: 100%;
 }
@@ -8,8 +18,8 @@
 
 .f-none{
     float: none;
-}
 
+}
 .m-b-20{
   margin-bottom: 20px;
 }
