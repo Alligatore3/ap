@@ -1,19 +1,23 @@
-.spinner{
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  z-index: 2000;
-  background-color: grey;
-}
-
+video,
 .vid{
   max-width: 100%;
 }
 
+.w-h-100{
+  width: 100%;
+  height: 100%;
+}
+
 .m-20{
   margin: 20px;
+}
+
+.flex{
+  display: flex;
+}
+
+.flex-column{
+  flex-direction: column;
 }
 
 .f-none{
@@ -97,4 +101,79 @@ box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
     .video-wrapper{
         width: 100%;
     }
+}
+
+.spinner_container{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 3000;
+  background-color: #FFF;
+}
+
+.placeholder{
+  display: block;
+  border-radius: 100%;
+  width: 600px;
+  position: absolute;
+  z-index: 5000;
+  left: calc(50% - 300px);
+  top: calc(50% - 300px);
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: calc( 50% - 20px );
+  bottom: calc( 50% - 315px );
+  z-index: 5200;
+}
+
+.spinner:before{
+  content: ' ';
+  background-color: white;
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  display: block;
+  margin-left: -10px;
+  position: relative;
+  top: -10px;
+}
+
+.double-bounce1, .double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #333;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+  animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bounce {
+  0%, 100% {
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% {
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
 }

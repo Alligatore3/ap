@@ -18,7 +18,17 @@
 	</head>
 
 	<body class="container">
-		<div class="spinner"></div>
+		<div class="spinner_container">
+			<img
+				src="./assets/images/cover/placeholder.jpg"
+				alt="placeholder"
+				class="placeholder"/>
+
+				<div class="spinner">
+				  <div class="double-bounce1"></div>
+				  <div class="double-bounce2"></div>
+				</div>
+		</div>
 		<div
 			id="main"
 			class="col-md-12 col-sm-12 text-center f-none">
@@ -80,10 +90,10 @@
 				$(function() {
 				  // Handler for .ready() called.
 				  plyr.setup();
-					
+
 					$( window ).on(
 						"load",
-						$('.spinner').hide()
+						$('.spinner_container').hide()
 					);
 				});
 			</script>
