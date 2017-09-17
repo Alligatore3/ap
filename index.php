@@ -37,17 +37,15 @@
 			$mp3file = new CMP3File;
 
 			if ( $handle = opendir('./assets/audio') ) {
-				$counter = 0;
 			    /* This is the correct way to loop over the directory. */
 			    while ( false !== ( $entry = readdir($handle) ) ) {
-					// Avoiding first two entities . and .. ( Unix file system convention
-					if( !unix_convention($entry) ){
-						$mp3file->getid3( "./assets/audio/" . $entry );
-						echo the_player($mp3file, $entry);
-					}
-					$counter++;
+						// Avoiding first two entities . and .. ( Unix file system convention
+						if( !unix_convention($entry) ){
+							$mp3file->getid3( "./assets/audio/" . $entry );
+							echo the_player($mp3file, $entry);
+						}
 
-					flush();
+						flush();
 		    	}
 
 		    	closedir( $handle );
@@ -62,7 +60,7 @@
 
 		?>
 
-		<?php echo the_counter($counter); ?>
+		<?php echo the_counter(); ?>
 
 		</div>
 

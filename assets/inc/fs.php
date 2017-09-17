@@ -41,14 +41,19 @@ function the_player($audio, $src) {
 HTML;
 }
 
+function dir_childs_counter($path){
+  return
+    iterator_count( new FilesystemIterator($path, FilesystemIterator::SKIP_DOTS) );
+}
 
-function the_counter($counter) {
 
+function the_counter() {
+    $fun = dir_childs_counter('./assets/audio');
     return <<<HTML
     <div class="counter">
         <i class="inline-block fa fa-retweet" aria-hidden="true"></i>
         <p class="inline-block size-20">
-            $counter
+          $fun
         </p>
     </div>
 HTML;
