@@ -1,5 +1,9 @@
 <?php
 
+function unix_convention($entity){
+  return $entity === '.' || $entity === '..';
+}
+
 function the_player($audio, $src) {
     $id = substr($src, 0, -4);
     $audio->comment = iconv('ISO-8859-1', 'UTF-8', $audio->comment);

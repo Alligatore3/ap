@@ -40,8 +40,8 @@
 				$counter = 0;
 			    /* This is the correct way to loop over the directory. */
 			    while ( false !== ( $entry = readdir($handle) ) ) {
-					// Avoiding first two entities . and .. ( Unix file system convention )
-					if( $counter !== 0 && $counter !== 1 ){
+					// Avoiding first two entities . and .. ( Unix file system convention
+					if( !unix_convention($entry) ){
 						$mp3file->getid3( "./assets/audio/" . $entry );
 						echo the_player($mp3file, $entry);
 					}
