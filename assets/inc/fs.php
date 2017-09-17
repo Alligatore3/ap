@@ -31,6 +31,7 @@ function the_player($audio, $src) {
 
             <audio
                 crossorigin="anonymous"
+                preload="metadata"
                 class="aud"
                 src="./assets/audio/$src"
                 type="audio/mp3"
