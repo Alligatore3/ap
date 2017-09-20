@@ -1,7 +1,4 @@
-<?php
-	include_once "./assets/inc/fs.php";
-	include_once "./assets/inc/CMP3File.php";
-?>
+<?php include_once "./assets/inc/fs.php"; ?>
 
 <!DOCTYPE html>
 <html>
@@ -34,22 +31,7 @@
 			class="col-md-12 col-sm-12 text-center f-none">
 
 		<?php
-			$mp3file = new CMP3File;
-
-			if ( $handle = opendir('./assets/audio') ) {
-			    /* This is the correct way to loop over the directory. */
-			    while ( false !== ( $entry = readdir($handle) ) ) {
-						// Avoiding first two entities . and .. ( Unix file system convention
-						if( !unix_convention($entry) ){
-							$mp3file->getid3( "./assets/audio/" . $entry );
-							echo the_player($mp3file, $entry);
-						}
-
-						flush();
-		    	}
-
-		    	closedir( $handle );
-			}
+			the_walker("./assets/audio");
 
 			$video = array(
 				array('faccia.mp4','faccia.jpg' ),

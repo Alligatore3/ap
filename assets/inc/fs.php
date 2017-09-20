@@ -1,4 +1,24 @@
 <?php
+include_once "CMP3File.php";
+
+function the_walker($dir) {
+  $mp3file = new CMP3File;
+
+  if ( $handle = opendir($dir) ) {
+    /* This is the correct way to loop over the directory. */
+    while ( false !== ( $entry = readdir($handle) ) ) {
+      // Avoiding first two entities . and .. ( Unix file system convention
+      if( !unix_convention($entry) ){
+        $mp3file->getid3( $dir . "/" . $entry );
+        echo the_player($mp3file, $entry);
+      }
+
+      flush();
+    }
+
+    closedir( $handle );
+  }
+}
 
 function unix_convention($entity){
   return $entity === '.' || $entity === '..';
