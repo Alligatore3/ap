@@ -15,7 +15,7 @@
 	</head>
 
 	<body class="container">
-		<div class="spinner_container">
+		<div class="spinner_container none">
 			<img
 				src="./assets/images/cover/placeholder.jpg"
 				alt="placeholder"
@@ -31,7 +31,7 @@
 			class="col-md-12 col-sm-12 text-center f-none">
 
 		<?php
-			the_walker("./assets/audio");
+			the_walker("./assets/audio", true);
 
 			$video = array(
 				array('faccia.mp4','faccia.jpg' ),
@@ -46,21 +46,7 @@
 
 		</div>
 
-		<div class="video col-md-12 col-sm-12 text-center m-b-100 f-none">
-			<div class="video-wrapper">
-				<?php foreach ($video as $vid): ?>
-					<video
-						class="vid center"
-						poster="./assets/images/cover/<?php echo $vid[1] ?>"
-						preload="true"
-						controls>
-						<source
-							src="./assets/video/<?php echo $vid[0]; ?>"
-							type="video/mp4">
-					</video>
-				<?php endforeach; ?>
-			</div>
-		</div>
+		<?php //the_walker("./assets/video", false); ?>
 
 		<footer>
 			<script src="./js/jquery.min.js"></script>
