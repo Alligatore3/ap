@@ -15,7 +15,7 @@
 	</head>
 
 	<body class="container">
-		<div class="spinner_container none">
+		<div class="spinner_container">
 			<img
 				src="./assets/images/cover/placeholder.jpg"
 				alt="placeholder"
