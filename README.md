@@ -8,6 +8,11 @@ Il sito è una raccolta di audio Whatsapp.
 
 [Then get metadata from MP3](https://stackoverflow.com/questions/4709584/how-to-get-meta-data-out-of-mp3-files)
 
+[The best PHP library for Object-Oriented media file information reading and writing](https://code.google.com/archive/p/php-reader/)
+
+[getID3() is a PHP script that extracts useful information from MP3s & other multimedia file formats](http://getid3.sourceforge.net/)
+
+
 ## New graphic ?
 [New player - Thanks Hoppus](https://github.com/sampotts/plyr)
 
