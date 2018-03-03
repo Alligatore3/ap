@@ -49,8 +49,12 @@
 		<?php //the_walker("./assets/video", false); ?>
 
 		<footer>
-			<script src="./js/jquery.min.js"></script>
+			<!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript"></script> -->
+			<!-- <script src="https://code.jquery.com/jquery-2.2.4.min.js" type="text/javascript"></script> -->
+			<script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
+			<!-- <script src="./js/jquery.min.js"></script> -->
 			<script src="./js/plyr.js"></script>
+			<script src="./js/main.js"></script>
 			<script src="https://use.fontawesome.com/26b7e42569.js"></script>
 			<script>
 				$(function() {
